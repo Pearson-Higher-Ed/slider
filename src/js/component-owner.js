@@ -11,8 +11,11 @@ class ComponentOwner extends React.Component {
 
     return (
       <span>
-        <input type="range" />
+        <label id="slider-label"> Slider placeholder label
+          <input type="range" role="slider" aria-labelledby="slider-label"/>
+        </label>
       </span>
+
     )
   }
 
