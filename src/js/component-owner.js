@@ -19,7 +19,7 @@ class ComponentOwner extends React.Component {
     return (
       <span>
         <label id="slider-label">
-        Hidden slider placeholder label
+        Hidden slider label
 
         <input type="range" id="numInput"
         role="slider"

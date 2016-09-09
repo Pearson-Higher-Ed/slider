@@ -8,80 +8,43 @@ input[type=range] {
     border: 1px solid white;
 
     /*required for proper track sizing in FF*/
-    width: 220px;
+    width: $slider-width;
 }
 input[type=range]::-webkit-slider-runnable-track {
-    width: 220px;
-    height: 5px;
-    background: black;
+    width: $slider-width;
+    height: 2px;
+    background: $pitch;
     border: none;
     border-radius: 3px;
 }
 input[type=range]::-webkit-slider-thumb {
     -webkit-appearance: none;
     border: none;
-    height: 14px;
-    width: 14px;
+    height: $circle-diameter;
+    width: $circle-diameter;
     border-radius: 50%;
-    background: black;
-    margin-top: -4px;
+    background: $pitch;
+    margin-top: -6px;
 }
 input[type=range]:focus {
     outline: none;
 }
 input[type=range]::-moz-range-track {
-    width: 220px;
-    height: 5px;
-    background: black;
+    width: $slider-width;
+    height: 2px;
+    background: $pitch;
     border: none;
     border-radius: 3px;
 }
 input[type=range]::-moz-range-thumb {
     border: none;
-    height: 14px;
-    width: 14px;
+    height: $circle-diameter;
+    width: $circle-diameter;
     border-radius: 50%;
-    background: black;
+    background: $pitch;
 }
-
 /*hide the outline behind the border*/
 input[type=range]:-moz-focusring{
     outline: 1px solid white;
     outline-offset: -1px;
-}
-
-input[type=range]::-ms-track {
-    width: 220px;
-    height: 5px;
-
-    /*remove bg color from the track, using ms-fill-lower and ms-fill-upper instead */
-    background: transparent;
-
-    /*leave room for the larger thumb to overflow with a transparent border */
-    border-color: transparent;
-    border-width: 6px 0;
-
-    /*remove default tick marks*/
-    color: transparent;
-}
-input[type=range]::-ms-fill-lower {
-    background: black;
-    border-radius: 10px;
-}
-input[type=range]::-ms-fill-upper {
-    background: black;
-    border-radius: 10px;
-}
-input[type=range]::-ms-thumb {
-    border: none;
-    height: 14px;
-    width: 14px;
-    border-radius: 50%;
-    background: black;
-}
-input[type=range]:focus::-ms-fill-lower {
-    background: black;
-}
-input[type=range]:focus::-ms-fill-upper {
-    background: black;
 }
