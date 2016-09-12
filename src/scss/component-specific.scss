@@ -3,88 +3,79 @@ body {
 }
 input[type=range] {
   -webkit-appearance: none;
-  width: 220px;
+  width: 23%;
 }
 input[type=range]::-webkit-slider-runnable-track {
-  width: 220px;
   height: 4px;
-  background: #ddd;
+  background: $sidewalk;
   border: none;
-  border-radius: 3px;
 }
 input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none;
   -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
-  border: 1px solid gray;
+  border: 1px solid $hairline-gray;
   height: 20px;
   width: 20px;
   border-radius: 50%;
-  background: white;
+  background: $white;
   margin-top: -8px;
 }
 input[type=range]:focus {
   outline: none;
 }
 input[type=range]::-moz-range-track {
-  width: 220px;
   height: 4px;
-  background: #ddd;
+  background: $sidewalk;
   border: none;
-  border-radius: 3px;
 }
 input[type=range]::-moz-range-thumb {
   -moz-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
-  border: 1px solid gray;
+  border: 1px solid $hairline-gray;
   height: 20px;
   width: 20px;
   border-radius: 50%;
-  background: white;
+  background: $white;
 }
 
 /*hide the outline behind the border*/
 input[type=range]:-moz-focusring{
-  outline: 1px solid white;
+  outline: 1px solid $white;
   outline-offset: -1px;
 }
-
 input[type=range]::-ms-track {
-  width: 220px;
   height: 4px;
   background: transparent;
   border-color: transparent;
-  border-width: 6px 0;
 
   /*remove default tick marks*/
   color: transparent;
 }
 input[type=range]::-moz-range-progress {
-  background: yellow
+  background: $hyperdrive;
 }
 input[type=range]::-ms-fill-lower {
-  background: yellow;
-  border-radius: 10px;
+  background: $hyperdrive;
 }
 input[type=range]::-ms-fill-upper {
-  background: green;
-  border-radius: 10px;
+  background: transparent;
 }
 input[type=range]::-ms-thumb {
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
-  border: 1px solid gray;
+  border: 1px solid $hairline-gray;
   height: 20px;
   width: 20px;
   border-radius: 50%;
-  background: white;
+  background: $white;
 }
 input[type=range]:focus::-webkit-slider-thumb {
-  border: 1px solid blue;
-  -webkit-box-shadow: 0px 0px 5px red;
+  border: 1px solid $basic-blue;
+  -webkit-box-shadow: 0px 0px 5px $basic-blue;
 }
 input[type=range]:focus::-moz-range-thumb {
-  border: 1px solid blue;
-  -webkit-box-shadow: 0px 0px 5px red;
+  border: 1px solid $basic-blue;
+  -webkit-box-shadow: 0px 0px 5px $basic-blue;
 }
 input[type=range]:focus::-ms-thumb {
-  border: 1px solid blue;
-  -webkit-box-shadow: 0px 0px 5px red;
+  border: 1px solid $basic-blue;
+  -webkit-box-shadow: 0px 0px 5px $basic-blue;
 }
