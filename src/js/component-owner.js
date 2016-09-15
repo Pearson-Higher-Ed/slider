@@ -11,7 +11,7 @@ class ComponentOwner extends React.Component {
   }
 
   updateSliderValue() {
-    this.setState({value: document.getElementById('numInput').value})
+    this.setState({value:document.getElementById('numInput').value});
   }
 
   render() {
@@ -19,10 +19,9 @@ class ComponentOwner extends React.Component {
     return (
       <span>
         <label id="slider-label">
-        Hidden slider label
+        Hidden slider label<br/>
 
         <input type="range" id="numInput"
-        role="slider"
         min="0"
         max="100"
         value={this.state.value}
@@ -35,7 +34,7 @@ class ComponentOwner extends React.Component {
         <output>{this.state.value}</output>
         </label>
       </span>
-    )
+    );
   }
 
 }

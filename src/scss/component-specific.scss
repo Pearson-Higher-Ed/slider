@@ -3,17 +3,22 @@ body {
 }
 input[type=range] {
   -webkit-appearance: none;
+  -moz-appearance: none;
   border: none;
   width: 23%;
+  outline: none;
+  background: none;
+}
+input[type=range]:focus {
+  outline: none;
 }
 input[type=range]::-webkit-slider-runnable-track {
   height: 4px;
-  background: pe-color(sidewalk);
-  border: none;
+  background: pe-color(hyperdrive);
 }
 input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none;
-  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
   border: 1px solid pe-color(hairline-gray);
   height: 20px;
   width: 20px;
@@ -21,45 +26,36 @@ input[type=range]::-webkit-slider-thumb {
   background: pe-color(white);
   margin-top: -8px;
 }
-input[type=range]:focus {
-  outline: none;
+input[type=range]:focus::-webkit-slider-thumb {
+  border: 1px solid pe-color(basic-blue);
+  box-shadow: 0px 0px 5px pe-color(basic-blue);
 }
 input[type=range]::-moz-focus-outer {
-  // bug fix to remove firefox's dotted border
   border: 0;
 }
 input[type=range]::-moz-range-track {
   height: 4px;
-  background: pe-color(sidewalk);
+  background: pe-color(hyperdrive);
   border: none;
 }
-input[type=range]:focus::-moz-range-track {
-  border: 0;
-}
 input[type=range]::-moz-range-thumb {
-  -moz-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
   border: 1px solid pe-color(hairline-gray);
   height: 20px;
   width: 20px;
   border-radius: 50%;
   background: pe-color(white);
 }
+input[type=range]:focus::-moz-range-thumb {
+  border: 1px solid pe-color(basic-blue);
+  box-shadow: 0px 0px 5px pe-color(basic-blue);
+}
 input[type=range]::-ms-track {
   height: 4px;
-  background: transparent;
   border-color: transparent;
-
-  /*remove default tick marks*/
-  color: transparent;
-}
-input[type=range]::-moz-range-progress {
-  background: pe-color(hyperdrive);
-}
-input[type=range]::-ms-fill-lower {
-  background: pe-color(hyperdrive);
-}
-input[type=range]::-ms-fill-upper {
+  border-width: 11px 0;
   background: transparent;
+  color: transparent;
 }
 input[type=range]::-ms-thumb {
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
@@ -67,17 +63,15 @@ input[type=range]::-ms-thumb {
   height: 20px;
   width: 20px;
   border-radius: 50%;
-  background: white;
+  background: pe-color(white);
 }
-input[type=range]:focus::-webkit-slider-thumb {
-  border: 1px solid pe-color(basic-blue);
-  -webkit-box-shadow: 0px 0px 5px pe-color(basic-blue);
+input[type=range]::-ms-fill-lower {
+  background: pe-color(hyperdrive);
 }
-input[type=range]:focus::-moz-range-thumb {
-  border: 1px solid pe-color(basic-blue);
-  -webkit-box-shadow: 0px 0px 5px pe-color(basic-blue);
+input[type=range]::-ms-fill-upper {
+  background: pe-color(hyperdrive);
 }
 input[type=range]:focus::-ms-thumb {
   border: 1px solid pe-color(basic-blue);
-  -webkit-box-shadow: 0px 0px 5px pe-color(basic-blue);
+  box-shadow: 0px 0px 5px pe-color(basic-blue);
 }
