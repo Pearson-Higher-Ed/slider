@@ -1,7 +1,7 @@
-## Welcome Component Developer
+## Origami Starter Kit [![Build Status](https://travis-ci.org/Pearson-Higher-Ed/component-archetype.svg?branch=master)](https://travis-ci.org/Pearson-Higher-Ed/component-archetype)
 
-This is a comprehensive starter kit for a **standalone Origami v2 component**. You should integrate your component into 
-a larger application capable of managing data flow of all available components.
+This is a comprehensive starter kit for creating a **standalone Origami v2 component**. You should integrate your component 
+into a larger application capable of managing data flow of all available components.
 
 In order to utilize this successfully, you **must** have solid working knowledge of Facebook's React - a library for
 building composable user interfaces. You should understand ES2015 (ES6) syntax and concepts as well.
@@ -20,7 +20,7 @@ Requests to the PDA team must be sent to pearson-design-accelerator@pearson.com.
 If you are building open source, the repo belongs in the **Pearson GitHub** organization. Send a request to be invited 
 with all contributing developer GitHub usernames to the PDA team. You must accept the resulting email invitation to join.
 
-If it is decided the repo belongs in **Pearson BitBucket**, send a request to the PDA team for all contributing developers
+If it is decided the repo belongs in **Pearson Bitbucket**, send a request to the PDA team for all contributing developers
  to be given write access to bitbucket.pearson.com/projects/PDA.
 
 ## Getting Started
