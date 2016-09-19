@@ -39,4 +39,4 @@ class ComponentOwner extends React.Component {
 
 }
 
-export default (ComponentOwner);
+export default ComponentOwner;
