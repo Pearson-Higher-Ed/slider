@@ -10,8 +10,8 @@ class ComponentOwner extends React.Component {
     };
   }
 
-  updateSliderValue() {
-    this.setState({value:document.getElementById('numInput').value});
+  updateSliderValue(e) {
+    this.setState({value:e.target.value});
   }
 
   render() {
@@ -28,7 +28,7 @@ class ComponentOwner extends React.Component {
         aria-valuemin="0"
         aria-valuemax="100"
         aria-valuenow={this.state.value}
-        onChange={() => this.updateSliderValue()}
+        onChange={(e) => this.updateSliderValue(e)}
         aria-labelledby="slider-label" tabindex="0" />
 
         <output>{this.state.value}</output>
