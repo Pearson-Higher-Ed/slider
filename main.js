@@ -2,9 +2,9 @@ import './main.scss';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ComponentOwner from './src/js/component-owner';
+import SliderComponent from './src/js/component-owner';
 
-export default class MyComponent {
+export default class MySlider {
 
   constructor(config) {
 

@@ -1,6 +1,6 @@
 import React from 'react';
 
-class ComponentOwner extends React.Component {
+class SliderComponent extends React.Component {
 
   constructor() {
     super();
@@ -38,4 +38,4 @@ class ComponentOwner extends React.Component {
 
 }
 
-export default ComponentOwner;
+export default SliderComponent;

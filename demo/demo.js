@@ -1,8 +1,8 @@
-import MyComponent from '../main';
+import MySlider from '../main';
 
 function init() {
 
-  new MyComponent({
+  new MySlider({
     elementId: 'demo-target2'
   });
 
