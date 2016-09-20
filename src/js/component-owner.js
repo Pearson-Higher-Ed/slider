@@ -31,7 +31,6 @@ class ComponentOwner extends React.Component {
         onChange={(e) => this.updateSliderValue(e)}
         aria-labelledby="slider-label" tabindex="0" />
 
-        <output>{this.state.value}</output>
         </label>
       </span>
     );
