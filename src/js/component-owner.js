@@ -20,6 +20,7 @@ class SliderComponent extends React.Component {
       <span>
         <label id="slider-label">
         Hidden slider label<br/>
+        </label>
 
         <input type="range" id="numInput"
         min="0"
@@ -29,9 +30,8 @@ class SliderComponent extends React.Component {
         aria-valuemax="100"
         aria-valuenow={this.state.value}
         onChange={(e) => this.updateSliderValue(e)}
-        aria-labelledby="slider-label" tabindex="0" />
+        htmlFor="slider-label" />
 
-        </label>
       </span>
     );
   }
