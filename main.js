@@ -13,7 +13,7 @@ export default class MySlider {
 
   init(config) {
     ReactDOM.render(
-      <ComponentOwner data={config} />,
+      <SliderComponent data={config} />,
       document.getElementById(config.elementId)
     );
   }
