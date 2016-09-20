@@ -30,7 +30,7 @@ class SliderComponent extends React.Component {
         aria-valuemax="100"
         aria-valuenow={this.state.value}
         onChange={(e) => this.updateSliderValue(e)}
-        htmlFor="slider-label" />
+        />
 
       </span>
     );
