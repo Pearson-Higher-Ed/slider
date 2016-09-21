@@ -19,3 +19,5 @@ export default class MySlider {
   }
 
 }
+
+document.body.addEventListener('o.InitMyComponent', e => new MySlider(e.detail));
