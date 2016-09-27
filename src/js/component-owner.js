@@ -28,7 +28,7 @@ class SliderComponent extends React.Component {
         onChange={(e) => this.updateSliderValue(e)}
         /> <br/>
 
-        <label id="slider-label" for="numInput">
+        <label id="slider-label" HTMLFor="numInput">
         Hidden slider label
         </label>
 
