@@ -2,7 +2,7 @@ import './main.scss';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import SliderComponent from './src/js/component-owner';
+import SliderComponent from './src/js/slider';
 
 export default class MySlider {
 

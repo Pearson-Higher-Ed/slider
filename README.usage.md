@@ -8,14 +8,14 @@ Install and save in your package.json:
 
 ## External Dependencies
 
-React and ReactDOM (v0.14 or v15) are external dependencies required to use this component. They are npm-installable or 
+React and ReactDOM (v0.14 or v15) are external dependencies required to use this component. They are npm-installable or
 available from a third-party [CDN](https://cdnjs.com/libraries/react/).
 
 This component targets the styling in the [Pearson Elements SDK](https://www.npmjs.com/package/pearson-elements).
 
 ## Cross-browser Compatibility
 
-The following [Polyfill.io](https://cdn.polyfill.io/v2/docs/examples) service is recommended for consuming this 
+The following [Polyfill.io](https://cdn.polyfill.io/v2/docs/examples) service is recommended for consuming this
 component cross-browser:
 
 ```html
@@ -29,15 +29,19 @@ If your browser already supports a feature, this service automatically optimizes
 
 ## How to Consume in an Application
 
+To launch your local server use:
+
+  npm run dev
+
 See the /demo directory for example usage.
 
 Both the component's original source code and the transpiled UMD bundle are available in the npm installation.
 
-Use the source when you want to use this project as a sub-component dependency that is referenced in the JSX of your 
+Use the source when you want to use this project as a sub-component dependency that is referenced in the JSX of your
 parent component.
 
 Use the bundled version when you want to drop in the component on your page and instantiate in a DOM element.
-     
+
 ### Bundle (Simplest)
 
 The transpiled, minified bundle will be available in /node_modules in the component /build directory.
@@ -63,7 +67,7 @@ Example webpack configuration (requires correct configuration and installation o
 ```js
 [EXAMPLE GOES HERE]
 ```
-    
+
 ### Component Configuration
 
     [CONFIG EXAMPLE GOES HERE]
