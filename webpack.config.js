@@ -1,7 +1,4 @@
-// For output.filename configuration:
-//
-// Change "component-name" in this file to your real component name!
-// DO NOT CHANGE "[name]", which denotes the entry property names that webpack automatically inserts for you!
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
   entry: {
@@ -44,7 +41,10 @@ module.exports = {
     loaders: [
       {
         test: /\.scss$/,
-        loader: 'style!css!sass' // sass -> css -> javascript -> inline style
+        loader: ExtractTextPlugin.extract(
+          'style',
+          '!css!sass' // sass -> css -> javascript -> inline style
+        )
       },
       {
         test: /\.js$/,
@@ -59,5 +59,8 @@ module.exports = {
         loader: 'json'
       }
     ]
-  }
+  },
+  plugins: [
+    new ExtractTextPlugin("slider.css")
+  ]
 };
