@@ -2,7 +2,7 @@ import MySlider from '../main';
 
 function init() {
 
-  document.body.dispatchEvent(new CustomEvent('o.InitMyComponent', {
+  document.body.dispatchEvent(new CustomEvent('o.InitMySliderComponent', {
     detail: {
       elementId: 'demo-target1'
     }

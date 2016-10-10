@@ -1,5 +1,5 @@
-import './main.scss';
-import './slider.css';
+import './main.scss'; // Needed for run build, not for page load.
+import './slider.css'; // Non existant before build is run. Needed once build has been run.
 
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -18,7 +18,6 @@ export default class MySlider {
       document.getElementById(config.elementId)
     );
   }
-
 }
 
-document.body.addEventListener('o.InitMyComponent', e => new MySlider(e.detail));
+document.body.addEventListener('o.InitMySliderComponent', e => new MySlider(e.detail));
