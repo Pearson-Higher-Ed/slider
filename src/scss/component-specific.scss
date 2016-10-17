@@ -1,3 +1,5 @@
+@import 'src/scss/_variables';
+
 body {
   padding: 30px;
 }
@@ -13,15 +15,15 @@ input[type=range]:focus {
   outline: none;
 }
 input[type=range]::-webkit-slider-runnable-track {
-  height: 4px;
+  height: $slider-track-height;
   background: pe-color(hyperdrive);
 }
 input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
   border: 1px solid pe-color(hairline-gray);
-  height: 20px;
-  width: 20px;
+  height: $slider-thumb-radius;
+  width: $slider-thumb-radius;
   border-radius: 50%;
   background: pe-color(white);
   margin-top: -8px;
@@ -34,15 +36,15 @@ input[type=range]::-moz-focus-outer {
   border: 0;
 }
 input[type=range]::-moz-range-track {
-  height: 4px;
+  height: $slider-track-height;
   background: pe-color(hyperdrive);
   border: none;
 }
 input[type=range]::-moz-range-thumb {
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
   border: 1px solid pe-color(hairline-gray);
-  height: 20px;
-  width: 20px;
+  height: $slider-thumb-radius;
+  width: $slider-thumb-radius;
   border-radius: 50%;
   background: pe-color(white);
 }
@@ -51,7 +53,7 @@ input[type=range]:focus::-moz-range-thumb {
   box-shadow: 0px 0px 5px pe-color(basic-blue);
 }
 input[type=range]::-ms-track {
-  height: 4px;
+  height: $slider-track-height;
   border-color: transparent;
   border-width: 11px 0;
   background: transparent;
@@ -60,8 +62,8 @@ input[type=range]::-ms-track {
 input[type=range]::-ms-thumb {
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
   border: 1px solid pe-color(hairline-gray);
-  height: 20px;
-  width: 20px;
+  height: $slider-thumb-radius;
+  width: $slider-thumb-radius;
   border-radius: 50%;
   background: pe-color(white);
 }
