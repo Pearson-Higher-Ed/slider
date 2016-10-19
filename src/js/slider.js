@@ -1,4 +1,7 @@
 import React from 'react';
+import Range from 'react-range';
+
+const ie11AndGreater = navigator.userAgent.indexOf('Trident') !== -1 && navigator.userAgent.indexOf('MSIE') === -1;
 
 class SliderComponent extends React.Component {
 
@@ -19,7 +22,7 @@ class SliderComponent extends React.Component {
     return (
       <span>
 
-        <input
+        <Range
           type="range"
           id="numInput"
           min="0"
@@ -28,11 +31,11 @@ class SliderComponent extends React.Component {
           aria-valuemin="0"
           aria-valuemax="100"
           aria-valuenow={this.state.value}
-          onChange={(e) => this.updateSliderValue(e)}
+          onInput={(e) => this.updateSliderValue(e)}
+          onChange={ie11AndGreater ? (e) => this.updateSliderValue(e) : (e) => this.updateSliderValue(e)}
         /><br/><br/>
-
         <label id="slider-label" HTMLFor="numInput">
-        Hidden slider label
+        Slider label
         </label>
 
       </span>
