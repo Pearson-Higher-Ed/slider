@@ -32,7 +32,11 @@ class SliderComponent extends React.Component {
           aria-valuemax="100"
           aria-valuenow={this.state.value}
           onInput={(e) => this.updateSliderValue(e)}
-          onChange={ie11AndGreater ? (e) => this.updateSliderValue(e) : () => {}}
+          onChange={(e) => {
+            if (ie11AndGreater) {
+              this.updateSliderValue(e)
+            }
+          }}
         /><br/><br/>
         <label id="slider-label" HTMLFor="numInput">
         Slider label
