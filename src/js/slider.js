@@ -22,6 +22,9 @@ class SliderComponent extends React.Component {
     return (
       <span>
 
+      <label HTMLFor="numInput">
+      Slider label
+      </label><br/><br/>
         <Range
           type="range"
           id="numInput"
@@ -37,10 +40,7 @@ class SliderComponent extends React.Component {
               this.updateSliderValue(e)
             }
           }}
-        /><br/><br/>
-        <label id="slider-label" HTMLFor="numInput">
-        Slider label
-        </label>
+        />
 
       </span>
     );
