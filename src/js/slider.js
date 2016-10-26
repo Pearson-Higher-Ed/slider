@@ -22,7 +22,7 @@ class SliderComponent extends React.Component {
     return (
       <span>
 
-      <label HTMLFor="numInput">
+      <label htmlFor="numInput">
       Slider label
       </label><br/><br/>
         <Range
