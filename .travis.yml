@@ -5,8 +5,7 @@ node_js:
 script:
 - npm run ci
 - chmod 777 ./test/shell_scripts/run_tests.sh
-- ./test/shell_scripts/run_tests.sh
-
+- "./test/shell_scripts/run_tests.sh"
 deploy:
   provider: npm
   email: pearson-design-accelerator@pearson.com
@@ -18,4 +17,4 @@ deploy:
     tags: true
 env:
   global:
-    secure: o3fw+zSFJMnmM1c2kJJ4zXlPTYO6Zhr4jeQpXKYDhwatO7PC15IyRv7lfCRvVgrPAZqxE2RRc7+0xd/FEpkO8SI+1U6WD/ZD4MIa7TlcrnTqN3hyLL0Pxu1koZVk9rTohCAcnp1tQek5xUIKO5H7VfhHRA5l4rPYnWyotV/oYciYnUpOd7/ZwZYkAYMDd/3uhI04q/gV0P+xQCPImUbkU/HwOE/drBdq3j1sWO6QjkwPN2F94+o1HJs9maixz2Z/miZamjT2xX4aoP8//dqRWA+2Dji4Jj7y7biVdV9iHljnPV4ycXhSs1DmnMICpS0QD/7mRshaYJPXRgIqIxwCyWtyoQhsw7KU6tGUWDp/Ys8v4NXcCgZotv62KrcgXfbxGtlteOvdB9dNKvJFeEQd2x09z4p1AQRseRkjEZ1Ua8JJMzFuaCawHLtk9Ouu5o4TONtDPjt2f/n7xukDSeDZDVjNYNuDIApUbRC+LdqIMOa7RTKnNcYSly6qW27e3HDvIHOqV0Vx3ar1x+zXpz7YUR7KpiFrj5QyCKjisT+ZoruAHlNnkM/1+SblPEJci8UR+Vu/mdI07MTVo/CwAfrCMl9V8hX2lcNuUyqGYsZM9VPbgg80d21t3HuUOr3j1pyf7fQxSPSNZsF9bG3gqun1g/KjaEgvceumz/2jqTCVb/E=
+  - secure: WxZP8MVmrcLZOkkRxxs2CnKXisN4MClwjLfgTheTi5rqROgcpjNO/r/uqopUBIJqDQ5BgBE1Z1Q5I3oX6p1ObXtpJ8DAwIu5tmgJAEPpm7pIY7q93gBBNNCIlUVdNrzvviKSMJMdeXiUSwDTGXCQdXf6sWtt4VkdwzbJ1fF0OvouCWNk8o6kicgUcdGzkRjdC+iUyRKuG+U6UmnwQG4y5jIZTYd1hDYfxaA3jouwoP8hlLtHkOM1j4cB2D3OIikpzXIXs0c86mModAcX43wosvgLEo4KcJX4lH6tGfLBtFmJ6dN1/4VEEBfp1xAeZGlnpfX8C/7CONsHVZ0D+V+jiU7+blS+jiXxjYX/kI/4Sp2BGskxQwqrWqvbJYaxXJ9DeQHwOiiw48OlShqa050utQeF2/btguY7Sgq99e41UdbozLm+rN7L2DMwZHudIag6oPO2p/xTDjulOcQsEySjA5bzcpglVwolsnJ7Y2P3umbzgAIQbjoRDAmyugFp1vsL1ysiVS/sPo8H/Yic5mJYvpMACZE0QVw1ITF1QuffksUN01lX9hKo7D1kclqTi526a2qjIDRRtnnEdUqUR2Li+mBJL5XjaHpN1dhjM9jC33N60mVFIlBFz6PGoi+A6EQiOnH0XnPkpts93qVQtvi2vsVD5oSmQsYIPu2ZmRX7u20=
