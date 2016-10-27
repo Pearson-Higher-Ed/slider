@@ -1,5 +1,5 @@
 import './main.scss'; // Needed for run build, not for page load.
-import './slider.css'; // Non existant before build is run. Needed once build has been run.
+import './slider.css'; // Non existent before build is run. Needed once build has been run.
 
 import React from 'react';
 import ReactDOM from 'react-dom';
