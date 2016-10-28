@@ -18,3 +18,10 @@ deploy:
 env:
   global:
   - secure: WxZP8MVmrcLZOkkRxxs2CnKXisN4MClwjLfgTheTi5rqROgcpjNO/r/uqopUBIJqDQ5BgBE1Z1Q5I3oX6p1ObXtpJ8DAwIu5tmgJAEPpm7pIY7q93gBBNNCIlUVdNrzvviKSMJMdeXiUSwDTGXCQdXf6sWtt4VkdwzbJ1fF0OvouCWNk8o6kicgUcdGzkRjdC+iUyRKuG+U6UmnwQG4y5jIZTYd1hDYfxaA3jouwoP8hlLtHkOM1j4cB2D3OIikpzXIXs0c86mModAcX43wosvgLEo4KcJX4lH6tGfLBtFmJ6dN1/4VEEBfp1xAeZGlnpfX8C/7CONsHVZ0D+V+jiU7+blS+jiXxjYX/kI/4Sp2BGskxQwqrWqvbJYaxXJ9DeQHwOiiw48OlShqa050utQeF2/btguY7Sgq99e41UdbozLm+rN7L2DMwZHudIag6oPO2p/xTDjulOcQsEySjA5bzcpglVwolsnJ7Y2P3umbzgAIQbjoRDAmyugFp1vsL1ysiVS/sPo8H/Yic5mJYvpMACZE0QVw1ITF1QuffksUN01lX9hKo7D1kclqTi526a2qjIDRRtnnEdUqUR2Li+mBJL5XjaHpN1dhjM9jC33N60mVFIlBFz6PGoi+A6EQiOnH0XnPkpts93qVQtvi2vsVD5oSmQsYIPu2ZmRX7u20=
+  - CXX=g++-4.8
+  addons:
+    apt:
+      sources:
+        - ubuntu-toolchain-r-test
+      packages:
+        - g++-4.8
