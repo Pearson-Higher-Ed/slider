@@ -1,7 +1,7 @@
 {
-  "name": "SliderComponent",
-  "version": "0.0.0",
-  "description": "",
+  "name": "@pearson-components/slider",
+  "version": "0.1.0",
+  "description": "Slider component",
   "main": "./main.js",
   "scripts": {
     "dev-setup": "mkdir -p fonts && cp ./node_modules/pearson-elements/dist/fonts/* ./fonts && cp ./node_modules/pearson-elements/dist/css/elements.css ./demo",
@@ -15,13 +15,14 @@
     "ci": "npm test && npm run build",
     "release": "node ./npm_scripts/release.js",
     "verify": "node ./npm_scripts/verify.js",
-    "postinstall": "cp ./node_modules/@pearson-components/npm-scripts/npm_scripts/*.js ./npm_scripts"
+    "postinstall": "cp ./node_modules/@pearson-components/npm-scripts/npm_scripts/*.js ./npm_scripts",
+    "postpublish": "npm access public && echo 'Package scope set to public!'"
   },
-  "author": "",
+  "author": "pearson-design-accelerator@pearson.com",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Pearson-Higher-Ed/"
+    "url": "https://github.com/Pearson-Higher-Ed/slider.git"
   },
   "dependencies": {
     "pearson-elements": "^0.12.0",
