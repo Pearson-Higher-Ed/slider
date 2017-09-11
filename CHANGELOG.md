@@ -1,5 +1,16 @@
+<a name="0.1.1"></a>
+## [0.1.1](https://github.com/Pearson-Higher-Ed/slider/compare/v0.1.0...v0.1.1) (2017-09-11)
+
+
+### Bug Fixes
+
+* fixed ignore-styles error found during testing. ([ac52f22](https://github.com/Pearson-Higher-Ed/slider/commit/ac52f22))
+* update utility scripts to remove postinstall hook. ([1a2e626](https://github.com/Pearson-Higher-Ed/slider/commit/1a2e626))
+
+
+
 <a name="0.1.0"></a>
-# 0.1.0 (2016-10-28)
+# [0.1.0](https://github.com/Pearson-Higher-Ed/slider/compare/896ea18...v0.1.0) (2016-10-28)
 
 
 ### Bug Fixes
@@ -16,7 +27,7 @@
 * naming package.json to fix Jason's error ([6dc92ff](https://github.com/Pearson-Higher-Ed/slider/commit/6dc92ff))
 * Reference release script in npm_scripts, and lint demo script. ([896ea18](https://github.com/Pearson-Higher-Ed/slider/commit/896ea18))
 * Revert package.json back to previous state. ([f1f6399](https://github.com/Pearson-Higher-Ed/slider/commit/f1f6399))
-* Use verify npm script to ensure package name has [@pearson](https://github.com/pearson)-components scope. ([772586f](https://github.com/Pearson-Higher-Ed/slider/commit/772586f))
+* Use verify npm script to ensure package name has [@pearson-components](https://github.com/pearson-components) scope. ([772586f](https://github.com/Pearson-Higher-Ed/slider/commit/772586f))
 
 
 ### Features
